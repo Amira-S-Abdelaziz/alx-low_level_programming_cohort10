@@ -13,9 +13,9 @@
  */
 int main(void)
 {
-	printf("Size of a char: %d", sizeof(int));
+	printf("Size of a char: %d", sizeof(char));
 	printf(" byte(s)");
-	printf("\nSize of an int: %d", sizeof(char));
+	printf("\nSize of an int: %d", sizeof(int));
 	printf(" byte(s)");
 	printf("\nSize of a long int: %d", sizeof(long int));
 	printf(" byte(s)");
