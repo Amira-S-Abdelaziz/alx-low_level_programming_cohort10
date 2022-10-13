@@ -13,15 +13,15 @@
  */
 int main(void)
 {
-	printf("Size of a char: ", sizeof(int));
+	printf("Size of a char: %d", sizeof(int));
 	printf(" byte(s)");
-	printf("\nSize of an int: ", sizeof(char));
+	printf("\nSize of an int: %d", sizeof(char));
 	printf(" byte(s)");
-	printf("\nSize of a long int: ", sizeof(long int));
+	printf("\nSize of a long int: %d", sizeof(long int));
 	printf(" byte(s)");
-	printf("\nSize of a long long int: ", sizeof(long long int));
+	printf("\nSize of a long long int: %d", sizeof(long long int));
 	printf(" byte(s)");
-	printf("\nSize of a float: ", sizeof(float));
+	printf("\nSize of a float: %d", sizeof(float));
 	printf(" byte(s)");
 
 	return (0);
