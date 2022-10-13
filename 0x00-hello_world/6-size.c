@@ -22,7 +22,7 @@ int main(void)
 	printf("\nSize of a long long int: %d", sizeof(long long int));
 	printf(" byte(s)");
 	printf("\nSize of a float: %d", sizeof(float));
-	printf(" byte(s)");
+	printf(" byte(s)\n");
 
 	return (0);
 }
