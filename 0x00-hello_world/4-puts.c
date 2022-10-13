@@ -1,6 +1,6 @@
 /*
  * File: 4-puts.c
- * Auth: Shady
+ * Auth: Amira
  */
 
 #include <stdio.h>
