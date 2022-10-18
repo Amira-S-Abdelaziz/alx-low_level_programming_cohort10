@@ -7,7 +7,7 @@
 #include <time.h>
 #include "main.h"
 /**
-*print_alphabet - prints the type
+*print_alphabet_x10 - prints the type
 *of the number
 *
 *Return:  Always 0.
