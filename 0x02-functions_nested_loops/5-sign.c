@@ -17,12 +17,12 @@
 /* betty style doc for function main goes there */
 int print_sign(int n)
 {
-	if (c > 0)
+	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
 	}
-	else if (c < 0)
+	else if (n < 0)
 	{
 		_putchar('-');
 		return (-1);
