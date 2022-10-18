@@ -20,12 +20,25 @@ void print_to_98(int n)
 {
 	int i = n;
 
-	for (; i <= 98; i++)
+	if (i <= 98)
 	{
-		if (i != 98)
-			printf("%d, ", i);
-		else
-			printf("%d", i);
+		for (; i <= 98; i++)
+		{
+			if (i != 98)
+				printf("%d, ", i);
+			else
+				printf("%d", i);
+		}
+	}
+	else
+	{
+		for (; i >= 98; i--)
+		{
+			if (i != 98)
+				printf("%d, ", i);
+			else
+				printf("%d", i);
+		}
 	}
 	putchar('\n');
 
