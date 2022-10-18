@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <limits.h>
 #include "main.h"
 /**
 *print_last_digit - prints the type
