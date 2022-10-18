@@ -7,7 +7,6 @@
 #include <time.h>
 #include "_putchar.h"
 #include "main.h"
-
 /**
 *main - prints the type
 *of the number
@@ -16,10 +15,13 @@
 *
 */
 /* betty style doc for function main goes there */
-int main(void)
+void printthis()
 {
-	printthis();
+	char s[] = "_putchar";
+	int a;
+	int sz = sizeof(s) / sizeof(s[0]);
 
-	return (0);
-
+	for (a = 0; a < sz ; a++)
+		_putchar(s[a]);
+	_putchar('\n');
 }
