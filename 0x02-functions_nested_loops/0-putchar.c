@@ -17,7 +17,7 @@
 int main(void)
 {
 	char a[] = "_putchar";
-	int k = sizeof(a)-1;
+	int k = sizeof(a) - 1;
 	int i;
 
 	for (i = 0; i < k; i++)
