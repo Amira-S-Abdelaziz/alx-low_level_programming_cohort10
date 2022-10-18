@@ -17,7 +17,9 @@
 /* betty style doc for function main goes there */
 int print_last_digit(int n)
 {
-	if (n < 0)
+	if (n == INT_MIN)
+		n = 8;
+	else if (n < 0)
 		n = n * -1;
 	_putchar((n % 10) + '0');
 	return (n % 10);
