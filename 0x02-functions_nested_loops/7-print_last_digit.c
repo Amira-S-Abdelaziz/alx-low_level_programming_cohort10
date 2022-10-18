@@ -17,6 +17,8 @@
 /* betty style doc for function main goes there */
 int print_last_digit(int n)
 {
-	_putchar((_abs(n) % 10) + '0');
+	if (n < 0)
+		n = n * -1;
+	_putchar((n % 10) + '0');
 	return (n % 10);
 }
