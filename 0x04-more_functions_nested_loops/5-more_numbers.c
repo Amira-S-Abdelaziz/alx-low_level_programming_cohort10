@@ -16,16 +16,19 @@ void more_numbers(void)
 	{
 		a = '0';
 		b = '0';
-		for (; a <= '9'; a++)
+		for (; a <= '1'; a++)
 		{
-			_putchar(a);
+			for (b = '0'; b <= '9'; b++)
+			{
+				if (a != '0')
+					_putchar(a);
+				_putchar(b);
+				if (a == '1' && b == '4')
+				{
+					_putchar('\n');
+					break;
+				}
+			}
 		}
-		a = '1';
-		for (; b <= '4'; b++)
-		{
-			_putchar(a);
-			_putchar(b);
-		}
-		_putchar('\n');
 	}
 }
