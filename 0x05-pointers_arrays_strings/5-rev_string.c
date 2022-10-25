@@ -1,25 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 /**
-*rev_string - reverse
-*@s: string
+*rev_string - print
+*@s: var
 */
 void rev_string(char *s)
 {
-	int len = sizeof(s);
-	char a[1000000];
-	int i = 0;
+	int i=0;
+	int len = 0;
+	char a[10000];
 
-	while (len != -1)
+	while (*(s + len) != '\0')
 	{
-		a[i] = s[len];
-		len--;
+		
+		a[i]=*(s+len);
 		i++;
+		len++;
 	}
-	len = 0;
-	for (; len < i; len++)
+	
+	len --;
+	i=0;
+	while(len!=-1)
 	{
-		*(s + len) = a[len];
+		*(s+len)=a[i];
+		i++;
+		len--;
 	}
 }
