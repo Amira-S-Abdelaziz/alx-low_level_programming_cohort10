@@ -9,6 +9,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int len = 0;
 	int i = 0;
+	char s[1000000];
 
 	while (*(src + len) != '\0')
 	{
@@ -16,7 +17,12 @@ char *_strcpy(char *dest, char *src)
 	}
 	for (; i < len; i++)
 	{
-		*(dest + i) = *(src + i);
+		*(s + i) = *(src + i);
+	}
+	i = 0;
+	for (; i < len; i++)
+	{
+		*(dest + i) = s[i];
 	}
 	return (src);
 }
