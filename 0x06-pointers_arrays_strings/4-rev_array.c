@@ -8,6 +8,7 @@ void reverse_array(int *a, int n)
 {
 	int i = 0;
 	int b[1000000];
+
 	while (i < n)
 	{
 		b[i] = a[i];
