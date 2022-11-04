@@ -1,13 +1,13 @@
-#include "main.h"
+#include <stdio.h>
 /**
 *main - function
 *@argc: counter
 *@argv: value
 *Return: value
 */
-int main(int agrc, char *agrv[])
+int main(int argc, char *argv[])
 {
-	if (agrc > 0)
-		printf("%s\n", agrv[0]);
+	if (argc > 0)
+		printf("%s\n", argv[0]);
 	return (0);
 }
