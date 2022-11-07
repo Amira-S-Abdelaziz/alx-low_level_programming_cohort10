@@ -1,4 +1,6 @@
-#include <stdio.h>
+#ifndef _SAMPLE_HEADER_H_
+#define _SAMPLE_HEADER_H_
+
 int _putchar(char c);
 
 int _islower(int c);
@@ -38,3 +40,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 
 char *_strstr(char *haystack, char *needle);
+#endif /* _SAMPLE_HEADER_H_ */
