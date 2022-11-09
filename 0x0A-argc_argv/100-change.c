@@ -7,7 +7,7 @@
 *@argv: var
 *Return: value
 */
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int a;
 	int ans = 0;
