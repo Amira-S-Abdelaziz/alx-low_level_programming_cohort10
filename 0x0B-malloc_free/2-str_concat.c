@@ -33,6 +33,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		*(s + i) = *(s2 + i - sz1);
 	}
-	*(s + i) = '\0';
+	*(s + sz) = '\0';
 	return (s);
 }
