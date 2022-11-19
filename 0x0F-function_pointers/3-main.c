@@ -23,15 +23,14 @@ int main(int agrc, char *agrv[])
 		printf("Error\n");
 		return (99);
 	}
-
-	num1 = atoi(agrv[1]);
-	num2 = atoi(agrv[3]);
 	o = get_op_func(agrv[2]);
-	if (o == NULL || agrv[2][1])
+	if (o == NULL)
 	{
 		printf("Error\n");
 		return (99);
 	}
-	printf("%d\n",o(num1,num2));
+	num1 = atoi(agrv[1]);
+	num2 = atoi(agrv[3]);
+	printf("%d\n",o(num1, num2));
 	return (0);
 }

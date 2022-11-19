@@ -19,7 +19,7 @@ int (*get_op_func(char *s))(int x, int y)
 
 	while (i < 6)
 	{
-		if (ops[i].op == s)
+		if (ops[i].op[0] == s[0])
 		{
 			return (ops[i].f);
 		}
