@@ -10,7 +10,7 @@
 */
 int main(int agrc, char *agrv[])
 {
-	int num1,num2;
+	int num1, num2;
 	int (*o)(int, int);
 
 	if (agrc != 4)
@@ -31,6 +31,6 @@ int main(int agrc, char *agrv[])
 	}
 	num1 = atoi(agrv[1]);
 	num2 = atoi(agrv[3]);
-	printf("%d\n",o(num1, num2));
+	printf("%d\n", o(num1, num2));
 	return (0);
 }
