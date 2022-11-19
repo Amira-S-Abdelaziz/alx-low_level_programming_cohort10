@@ -16,18 +16,18 @@ int main(int agrc, char *agrv[])
 	if (agrc != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
 	if (agrv[2][1])
 	{
 		printf("Error\n");
-		return (99);
+		exit(99);
 	}
 	o = get_op_func(agrv[2]);
 	if (o == NULL)
 	{
 		printf("Error\n");
-		return (99);
+		exit(99);
 	}
 	num1 = atoi(agrv[1]);
 	num2 = atoi(agrv[3]);

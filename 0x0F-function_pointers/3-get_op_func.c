@@ -17,13 +17,11 @@ int (*get_op_func(char *s))(int x, int y)
 	};
 	int i = 0;
 
-	while (i < 6)
+	while (i < 10)
 	{
-		if (ops[i].op[0] == s[0])
-		{
-			return (ops[i].f);
-		}
+		if (ops->op[i] == s[0])
+			break;
 		i++;
 	}
-	return (NULL);
+	return (ops[i / 2].f);
 }
