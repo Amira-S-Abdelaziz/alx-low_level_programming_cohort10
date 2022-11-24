@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
-*st_len - function
+*list_len - function
 *@h: var
 *Return: len
 */
