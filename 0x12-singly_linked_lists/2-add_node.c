@@ -13,6 +13,9 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *temp = malloc(sizeof(list_t));
 	list_t *he = *head;
 
+	if (temp == NULL)
+		return (NULL);
+
 	if (*head == NULL)
 	{
 		temp->next = NULL;
