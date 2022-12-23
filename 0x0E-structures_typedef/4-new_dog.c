@@ -20,10 +20,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		i++;
 	while (*(owner + j) != '\0')
 		j++;
-	temp->name = malloc(i);
-	temp->owner = malloc(j);
+	temp->name = malloc(i), temp->owner = malloc(j);
 	if (temp->name == NULL || temp->owner == NULL)
-		return (NULL);
+		free(temp->name), free(temp->owner), free(temp), return (NULL);
 	i = j = 0;
 	while (*(name + i) != '\0')
 	{
