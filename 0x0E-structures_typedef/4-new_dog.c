@@ -15,12 +15,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	temp = malloc(sizeof(*temp));
 	if (temp == NULL || !name || !owner)
+	{
+		free(temp);
 		return (NULL);
+	}
 	while (*(name + i) != '\0')
 		i++;
 	while (*(owner + j) != '\0')
 		j++;
-	temp->name = malloc(i), temp->owner = malloc(j);
+	temp->name = malloc(i + 1), temp->owner = malloc(j + 1);
 	if (temp->name == NULL || temp->owner == NULL)
 	{
 		free(temp->name), free(temp->owner), free(temp);
