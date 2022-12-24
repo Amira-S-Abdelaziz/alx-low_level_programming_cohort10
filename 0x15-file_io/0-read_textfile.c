@@ -3,6 +3,8 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdlib.h>
+#include "main.h"
 /**
 *read_textfile - function
 *@filename: variable
@@ -13,8 +15,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	int fd2;
-	char buf[1024];
+	char *buf;
 
+	buf = malloc(letters + 1);
+	if (buf == NULL)
+		return (0);
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
@@ -23,6 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd2 = read(fd, buf, letters);
 	buf[letters] = '\0';
 	printf("%s", buf);
+	free(buf);
 	close(fd);
 	return (fd2);
 }
